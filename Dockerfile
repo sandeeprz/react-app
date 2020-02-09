@@ -1,11 +1,10 @@
-FROM centos:7.3.1611 as builder
-
-ADD https://rpm.nodesource.com/setup_8.x /root/
-#RUN curl -sL https://rpm.nodesource.com/setup_8.x
-RUN bash /root/setup_8.x ;\  
-yum -y install nodejs ;\
-yum -y install java-1.8.0-openjdk ;\
-yum install vim -y
+#FROM centos:7.3.1611 as builder
+FROM node:alpine as builder
+#ADD https://rpm.nodesource.com/setup_8.x /root/
+#RUN bash /root/setup_8.x ;\  
+#yum -y install nodejs ;\
+#yum -y install java-1.8.0-openjdk ;\
+#yum install vim -y
 
 
 
