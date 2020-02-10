@@ -1,4 +1,4 @@
-FROM centos:7.3.1611 as builder
+FROM node:alpine as builder
 ADD https://rpm.nodesource.com/setup_12.x /root/
 RUN bash /root/setup_12.x ;\ 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash ;\
