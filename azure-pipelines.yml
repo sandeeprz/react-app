@@ -20,6 +20,6 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'docker_sc'
-        repository: 'new/react-app'
+        repository: 'sandeeprz/react-app'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
