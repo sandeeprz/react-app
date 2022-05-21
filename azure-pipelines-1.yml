@@ -27,9 +27,9 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
           $(tag)
-  - task: CopyPublishBuildArtifacts@1
-    inputs:
-      CopyRoot: '$(Build.SourcesDirectory)'
-      Contents: 'Dockerfile'
-      ArtifactName: 'docker'
-      ArtifactType: 'Container'
+- task: CopyPublishBuildArtifacts@1
+  inputs:
+    CopyRoot: '$(Build.SourcesDirectory)'
+    Contents: 'Dockerfile'
+    ArtifactName: 'docker'
+    ArtifactType: 'Container'
